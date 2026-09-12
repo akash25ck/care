@@ -1,0 +1,11 @@
+{
+  "nutrition__eyebrow": "Public health programmes",
+  "nutrition__page_title": "Care Nutrition",
+  "nutrition__programme_title": "Nutrition programme dashboard",
+  "nutrition__action_label": "Open Nutrition",
+  "nutrition__loading": "Loading nutrition data…",
+  "nutrition__metric_growth": "Growth assessments",
+  "nutrition__metric_followup": "Active follow-ups",
+  "nutrition__metric_supplies": "Supplementation coverage",
+  "nutrition__status": "Plugin enabled: {{enabled}}"
+}
