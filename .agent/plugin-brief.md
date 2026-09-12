@@ -18,8 +18,10 @@ but core must not reference the plugin.
   through deliberately read-only OTP-scoped endpoints.
 - **Third-party services:** none.
 - **Preview port:** `4173`.
-- **Workspace:** create the backend and frontend plugin repositories alongside the CARE
-  checkouts, then register them locally without copying feature code into core.
+- **Workspace:** keep the frontend plugin repository alongside the CARE checkouts, but place
+  the backend plugin repository inside `$CARE_BE/care_nutrition` before registering it locally.
+  A local `Plug` with `version=""` resolves that directory relative to `$CARE_BE`, and Docker
+  only includes the CARE checkout in its build context.
 
 These are implementation assumptions for the first build and should be confirmed before
 production rollout, especially the target age range, measurement protocol, and reporting
